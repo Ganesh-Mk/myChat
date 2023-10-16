@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+
+body {
+    background-color: #070a19;
+    font-family: Arial, sans-serif;
+}
+#userName{
+    outline: none;
+}
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#login-page-form {
+    background-color: #6b719538;
+    padding: 1.25rem;
+    border-radius: 0.4375rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#nameSubmitBtn{
+    padding: .4rem 1rem;    
+    font-weight: bold;
+    margin-top: .2rem;
+}
+#userName {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+}
+
+#login-page-form h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: white;
+}
+
+#submitBtn {
+    background-color: #0074c2;
+    color: #fff;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+.chat-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header{
+    background: #ffffffd4;
+    display: grid;
+    place-items: center;
+    padding: 0 0 0.3rem 0;
+    font-size: .9rem;
+    border-radius: .4rem;
+    margin: 1rem 0;
+}
+header h1{
+    font-family: system-ui, -apple-system;
+}
+.container {
+    background-color: #6b719538;
+    padding: 1.25rem;
+    border-radius: 0.4375rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    max-width: 37rem;
+    height: 28rem;
+    overflow: auto;
+}
+
+.message-container {
+    margin: 0.625rem 0;
+}
+
+.message {
+    padding: 0.625rem 0.9375rem;
+    border-radius: 0.625rem;
+    margin: 0.6rem 0.3rem;
+    width: fit-content;
+}
+
+.left {
+    background-color: #01436f;
+    border-radius: 0 0.9rem 0.6rem 0.9rem;
+    color: white;
+    border-left: 0.1rem solid white;
+}
+
+.center {
+    background-color: #002741;
+    color: #fff;
+    border-left: 0.1rem solid #ffffff9c;
+    border-right: 0.1rem solid #ffffff9c;
+    margin: .7rem auto;
+    font-size: .8rem;
+    padding: .4rem 1.6rem;
+}
+.right {
+    background-color: #0074c2;
+    color: #fff;
+    margin-left: auto;
+    border-radius: 0.9rem 0 0.9rem 0.6rem;
+    border-right: 0.1rem solid white;
+}
+
+.inMessage-name{
+    font-size: .8rem;
+    color: #fbfcffc7;
+}
+
+.time{
+    font-size: 0.6rem;
+    text-align: end;
+    color: #fbfcffc7;
+    margin-top: 0.2rem;
+}
+
+
+
+
+
+
+#form-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#messageInput {
+    width: 32.7rem;
+    margin-right: 1rem;
+    outline: none;
+    padding: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+}
+
+#submitBtn {
+    background-color: #0074c2;
+    color: #fff;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+
+
+
+
+.scrolling {
+    overflow-y: auto;
+}
+.scrolling::-webkit-scrollbar {
+    width: 0.4rem;
+}
+.scrolling::-webkit-scrollbar-thumb {
+    background-color: rgb(103 116 161 / 64%);
+    border-radius: 100rem;
+}
+.scrolling::-webkit-scrollbar-track {
+    background-color: transparent; 
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 630px) {
+    html{
+        font-size: 80%;
+    }
+}
+@media screen and (max-width: 500px) {      /* mobile view */
+    html{
+        font-size: 80%;
+    }
+    .chat-container{
+        width: 90%;
+    }
+    .container{
+        height: 80vh;
+    }
+}
